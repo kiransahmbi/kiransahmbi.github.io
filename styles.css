@@ -20,8 +20,13 @@ nav {
   background: linear-gradient(110deg, rgba(43,103,119,1) 75%, rgba(0,0,0,1) 100%);
 }
 
+.header-picture {
+  width: 50%;
+}
+
 .header-portfolio-name {
-  /* padding: */
+  padding: 0 5% 0 0;
+  text-align: left;
 }
 
 .portfolio-name {

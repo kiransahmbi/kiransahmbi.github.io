@@ -1,10 +1,30 @@
 body{
-    /* background-color: #f7f7f7; */
     background-color: #f2f2f2;
 }
 
+.about-me-hello {
+  /* background-color: white; */
+  margin: 1rem;
+  /* text-align:  */
+}
+
+.handwave {
+  width: 5%;
+}
+
+.about-me {
+  background-color: white;
+  background-color: #c8d8e4;
+  margin: 1rem 8%;
+  padding: 0.5rem 1rem;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+
 .main-timeline {
-    position: relative
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .main-timeline:before {
@@ -170,7 +190,15 @@ body{
 }
 
 .main-timeline .description {
-    margin-bottom: 0
+    margin-bottom: 0;
+}
+
+.main-timeline .description:nth-child(n) {
+    /* padding: 0 0 0 20%; */
+}
+
+.main-timeline .description:nth-child(2n) {
+    /* padding: 0 20% 0 0; */
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content {
