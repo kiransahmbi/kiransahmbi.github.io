@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Kiran S Realtor</title>
+<head>
+  <meta charset="utf-8">
+  <title>Kiran S Realtor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="container">
+    <header>
+      <a href="homepage.html">
+        <img src="banner.jpg">
+      </a>
+    </header>
 
-  </head>
-  <body id="properties-html">
-    <section>
-      <header>
-        <a href="homepage.html">
-          <img src="banner.jpg">
-        </a>
-      </header>
-
-      <nav>
-        <a href="homepage.html">Homepage</a> |
-        <a href="properties.html">Available Properties</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="sitemap.html">Sitemap</a>
-      </nav>
+    <nav class="navbar">
+      <a href="homepage.html">Homepage</a> |
+      <a href="properties.html">Available Properties</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="sitemap.html">Sitemap</a>
+    </nav>
 
       <main>
         <div>
             <h1>Interested In a Listing? Contact Us Below!</h1>
             <h2></h2>
-            
-        </div>  
-        
-        <form action="mailto:kiran.sahmbi@realtor.com" method="post">
-            <label for="first-name">First Name:</label>
-            <input id="first-name" type="text">
 
-            <label for="last-name">Last Name:</label>
-            <input id="last-name" type="text">
+        </div>
+
+        <form action="mailto:kiran.sahmbi@realtor.com" method="post">
+            <label for="name">Name:</label>
+            <input id="name" type="text">
 
             <label for="phone">Phone Number:</label>
             <input id="phone" type="tel">
@@ -59,15 +56,14 @@
             <label for="comments">Additional Comments:</label>
             <textarea id="comments" type="textarea" rows="3"></textarea>
 
-            <input type="submit" value="Submit!">
+            <input class="btn" type="submit" value="Submit!">
         </form>
-        
-      </main>
-    
 
-      <footer>
-        <!-- Kirandeep Sahmbi 301232670 -->
-        COMP213 - Term Project
+      </main>
+
+
+      <footer class="">
+        	&copy; KS 2021
       </footer>
     </section>
   </body>

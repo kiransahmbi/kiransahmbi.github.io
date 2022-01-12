@@ -1,127 +1,98 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Kiran S Realtor</title>
+<head>
+  <meta charset="utf-8">
+  <title>Kiran S Realtor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="container">
+    <header>
+      <a href="homepage.html">
+        <img src="banner.jpg">
+      </a>
+    </header>
 
-  </head>
-  <body id="properties-html">
-    <section>
-      <header>
-        <a href="homepage.html">
-          <img src="banner.jpg">
-        </a>
-      </header>
+    <nav class="navbar">
+      <a href="homepage.html">Homepage</a> |
+      <a href="properties.html">Available Properties</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="sitemap.html">Sitemap</a>
+    </nav>
 
-      <nav>
-        <a href="homepage.html">Homepage</a> |
-        <a href="properties.html">Available Properties</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="sitemap.html">Sitemap</a>
-      </nav>
+      <main class="container" id="properties-html">
 
-      <main>
-        
         <h1>Take a look at our available properties in Brampton!</h1>
-        <hr>
-        <div class="properties-table-container">
-          <table class="properties">
-              <tr>
-                  <th>
-                      10 Sky Valley Boulevard
-                  </th>
-                  <th>
-                      28 Sled Dog Circle
-                  </th>
-                  <th>
-                      64 Moon Crescent Drive
-                  </th>
-              </tr>
-              <tr>
-                  <td>
-                    <a href="property1.html">
-                      <img class="property" src="properties/property-1-1.jpg">
-                    </a>
-                  </td>
-                
-                  <td>
-                    <a href="property2.html">
-                      <img class="property" src="properties/property-2-1.jpg">
-                    </a>
-                  </td>
 
-                  <td>
-                    <a href="property3.html">
-                      <img class="property" src="properties/property-3-1.jpg">
-                    </a>
-                  </td>
-              </tr>
+          <div class="card-deck row mb-3 text-center properties">
 
-              <tr>
-                <td class="price">
-                  $1,200,000
-                </td>
-              
-                <td class="price">
-                  $1,560,000
-                </td>
-
-                <td class="price">
-                  $1,780,000
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <p>
-                    Prime 0.88 Acre Redevelopment Property With Over 200 Of Feet Frontage
+              <div class="card box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">10 Sky Valley Boulevard</h4>
+                </div>
+                <div class="card-body">
                     <br>
-                    <br>
-                    One Of Brampton's Busiest Roads With Public Transportation At The Property
-                  </p>
-                </td>
-              
-                <td>
+                    <img class="property" src="properties/property-1-1.jpg">
+                    <br><br>
+                    <p>
+                      Prime 0.88 Acre Redevelopment Property With Over 200 Of Feet Frontage
+                      <br><br>
+                      One Of Brampton's Busiest Roads With Public Transportation At The Property
+                    </p>
+                    <a href="property1.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer">
+                  <p class="price">$1,200,000</p>
+
+                </div>
+              </div>
+
+              <div class="card box-shadow">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">28 Sled Dog Circle</h4>
+                </div>
+                <div class="card-body">
+                  <br>
+                  <img class="property" src="properties/property-2-1.jpg">
+                  <br><br>
                   <p>
                     Beautiful and Spacious Four Bedroom Property, with Renovated Modern Interiors
-                    <br>
-                    <br>
+                    <br><br>
                     Pre-built Two Unit Rental Basement With Approved Permits From the City
                   </p>
-                </td>
+                  <a href="property2.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer">
+                  <p class="price">$1,560,000</p>
+                </div>
+            </div>
 
-                <td>
-                  <p>
-                    Absolutely Stunning Two-Toned Brick House, with Built-in Theater and Sauna Room
-                    <br>
-                    <br>
-                    Located In The Center Of Existing High Density Development: Hospitals, Malls, Restaurants
-                  </p>
-                </td>
-              </tr>
+            <div class="card box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">64 Moon Crescent Drive</h4>
+              </div>
+              <div class="card-body">
+                <br>
+                <img class="property" src="properties/property-3-1.jpg">
+                <br><br>
+                <p>
+                  Absolutely Stunning Two-Toned Brick House, with Built-in Theater and Sauna
+                  <br><br>
+                  Located In The Center Of Existing High Density Development
+                </p>
+                <a href="property3.html" class="stretched-link"></a>
+              </div>
+              <div class="card-footer">
+                <p class="price">$1,780,000</p>
+              </div>
+          </div>
 
-              <tr>
-                <td>
-                  <a class="see-more" href="property1.html">See More</a>
-                </td>
-              
-                <td>
-                  <a class="see-more" href="property2.html">See More</a>
-                </td>
-
-                <td>
-                  <a class="see-more" href="property3.html">See More</a>
-                </td>
-              </tr>
-          </table>
-        </div>  
       </main>
-    
 
-      <footer>
-        <!-- Kirandeep Sahmbi 301232670 -->
-        COMP213 - Term Project
+
+      <footer class="">
+        	&copy; KS 2021
       </footer>
     </section>
   </body>

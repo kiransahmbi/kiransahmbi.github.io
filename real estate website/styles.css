@@ -1,42 +1,41 @@
 body {
     text-align: center;
-    background-color: #0a8aa6;
+    background-color: #076378;
     font-family: Arial;
     font-size: 16px;
 }
 
 section {
-    margin: 0 auto;
     width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     background-color: #f3f3f3;
     border-radius: 5px;
-    margin: 0.25rem 0 0.5rem;
-    border: 2px solid #d9d9d9;
-    padding: 0.25rem 0;
+    margin: 0.25rem 0;
+    /* padding: 0.25rem 1rem; */
 }
 
 nav a {
-    text-decoration: none;
     color: black;
-    padding: 0 1.5rem;
+    padding: 0 6%;
+}
 
+nav a:hover {
+    color: grey;
 }
 
 main {
     border-radius: 5px;
-    border: 2px solid #d9d9d9;
     background-color: #f7f7f7;
-    /* background-size: 9px 9px;
-    background-image: repeating-linear-gradient(45deg, #f3f3f3 0, #f3f3f3 0.9px, white 0, white 50%); */
 }
 
 footer {
-    margin: 0.25rem auto 0;
+    margin: 0.25rem 0 0;
     background-color: #f3f3f3;
-    border: 2px solid #d9d9d9;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -45,11 +44,10 @@ header img {
     width: 100%;
     border-radius: 5px;
     border: 2px solid #d9d9d9;
-
 }
 
 .realtor-img-holder {
-    width: 30%
+    width: 40%
 }
 
 .realtor {
@@ -59,7 +57,7 @@ header img {
 .realtor-description {
     text-align: left;
     margin: 5rem;
-    padding: 0 5rem 0 0;
+    padding: 1rem ;
 }
 
 .realtor-description p {
@@ -67,91 +65,81 @@ header img {
 }
 
 .realtor-description h1, .realtor-description h4 {
-    margin: 5px 0;
+    padding: 0;
 }
 
+
+/* Testimonials */
 .testimonals {
-    margin: 0 2rem 1rem;
-    border-spacing: 2rem 0rem;
+    margin: 1% 7%;
 }
 
 .testimonals td {
-    border: 2px solid black;
-    border-radius: 25px;
+    border: 2px solid #d9d9d9;
     background-color: white;
-    padding: 1rem 1rem;
-
-}
-
-.testimonals td:hover {
-    background-color: #0a8aa6;
+    padding: 0.5rem 1rem;
 }
 
 hr {
     margin: 1rem 0 0 0;
-    border: 2px solid #d9d9d9;
+    border: 2px solid #076378;
 }
 
+
+h1 {
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 /* Property Page */
 
-#properties-html h1 {
-    margin: 1rem 0;
-}
-
 /* images */
 .property {
-    width: 80%;
-}
-
-.properties-table-container {
-    background-color: white;
-    padding: 0.25rem 0;
+    height: 150px;
 }
 
 .properties {
-    margin: 0.75rem 2rem 1.5rem;
-    border-collapse: collapse;
+  padding: 0 3%;
 }
 
-
-.properties td:nth-child(2) {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+.card {
+  border: 2px solid  #076378;
 }
 
-.properties td p {
-    padding: 0 1rem 0.5rem;
+.card-header {
+    border-bottom: 2px solid  #076378;
+}
+
+.card-body {
+  padding: 0 1rem;
+  font-size: 0.9em;
+}
+
+.card-footer {
+  padding: 0.25rem;
+  border-top: 2px solid  #076378;
 }
 
 .price {
     padding: 10px 0 0;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.4em;
     color: #D4AF37;
 }
 
-.see-more {
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px 10px;
-    color: black;
-    background-color: #f3f3f3;
-}
-
-.see-more:hover {
-    background-color: #0a8aa6;
-    color: white;
-}
-
 /* Contacts Page */
-
 form {
     width: 70%;
     display: grid;
     grid-template-columns: 400px 1fr;
-    margin: 1rem 0 1rem;
+    margin: 0 0 0.5rem;
 }
 
 label {
@@ -180,23 +168,17 @@ input[type="submit"]:hover {
 
 /* Property Page 1 */
 
-.property-name {
-    margin: 1rem 0;
-}
-
 .property-img {
     width: 100%;
 }
 
 .property-table {
-    margin: 0 0 1rem;
+    margin: 0 1rem 1rem;
 }
 
 .property-table tr td {
     border: 2px solid #d9d9d9;
-    border-radius: 20px;
     padding: 0.5rem;
-    background-color: white;
 }
 
 .property-table p {
@@ -205,6 +187,10 @@ input[type="submit"]:hover {
 
 /* Site Map */
 
+#sitemap hr {
+  margin: 0;
+}
+
 .sitemap-table {
     margin: 1rem auto;
     border-spacing: 0.5rem;
@@ -212,7 +198,6 @@ input[type="submit"]:hover {
 
 .sitemap-table tr td {
     border: 2px solid #d9d9d9;
-    border-radius: 20px;
     padding: 1rem;
     font-weight: bold;
     background-color: #f3f3f3;
