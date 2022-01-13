@@ -1,0 +1,147 @@
+body {
+    margin-top: 0.5%;
+    font-family: "Verdana";
+    background-color: #230C33;
+}
+
+section {
+  width: 65%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.banner {
+  text-align: center;
+  padding: 2% 0 0;
+}
+
+.samsung {
+  width: 25%;
+}
+
+.header {
+  margin: 1% 0 1%;
+  width: 100%;
+}
+
+footer {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  color: grey;
+  text-align: center;
+}
+
+.buds {
+  width: 70%;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.buds-img {
+  width: 100%;
+  display: none;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid  #461867 ;
+  margin: 0;
+}
+
+h3 {
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 2.9rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  text-align: center;
+  background-color: #f4ebfa;
+  font-family: "sans-serif";
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid  #461867 ;
+  border-radius: 5px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.description {
+  padding: 2% 1% 1% 30px;
+  text-align: left;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.col {
+  padding: 1% 0 2%;
+}
+
+.colour-table {
+  width: 90%;
+  text-align: center;
+  margin: 1% auto;
+  border: 2px solid  #461867 ;
+}
+
+.colours {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid black;
+  margin: 0 auto 5px;
+}
+
+.distributors {
+  border: 2px solid  #461867 ;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.distributorImg {
+  border: 2px solid black;
+  padding: 10px 25px;
+  border-radius: 5px;
+  opacity: 0.9;
+  height: 5rem;
+  width: 13rem;
+
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.bronze {
+  background-color: #b3819e;
+}
+
+/* Detail Page */
+
+.detailed-buds {
+  width: 300px;
+  height: 320px;
+}
+
+.detailed-buds2 {
+  width: 330px;
+  height: 380px;
+}
