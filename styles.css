@@ -16,7 +16,6 @@ nav {
 }
 
 .header {
-  /* background-color: rgba(43, 103, 119, 1); */
   background: rgb(0,0,0);
   background: linear-gradient(110deg, rgba(43,103,119,1) 75%, #071214 100%);
 }
