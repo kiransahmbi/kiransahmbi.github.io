@@ -2,12 +2,19 @@ body {
   text-align: center;
   font-family: Helvetica;
   background-color: #fffbf0;
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
 }
 
 nav {
-    background-color: #f2f2f2;
+    background-color: rgba(43,103,119);
     width: 100%;
-    height: 100%;
     overflow: hidden;
     margin: 0;
     display: flex;
@@ -15,9 +22,23 @@ nav {
     flex-wrap: wrap;
 }
 
+nav a {
+  color: #cfc8bb;
+}
+
+.scrolled {
+  background-color: #fffbf0;
+}
+
+.scrolled-text {
+  color: black;
+}
+
+/* HEADER */
 .header {
   background: rgb(0,0,0);
-  background: linear-gradient(110deg, rgba(43,103,119,1) 75%, #071214 100%);
+  background: linear-gradient(110deg, rgba(43,103,119,1) 70%, #071214 100%);
+  padding: 15%;
 }
 
 .header-picture-container {
@@ -27,6 +48,7 @@ nav {
 
 .header-portfolio-picture {
   width: 60%;
+  border-radius: 100%;
 }
 
 .header-description-container {
@@ -35,14 +57,14 @@ nav {
 }
 
 .header-name {
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   margin-bottom: 1.5rem;
 }
 
 .header-tagline {
   background-color: #f2f2f2;
   margin: 0 auto;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   padding: 0.4rem 1rem 0.4rem 1rem;
 }
 
@@ -54,31 +76,12 @@ nav {
   background-color: #c8d8e4;
 }
 
-.album {
-  /* background-size: 20px 20px; */
-  /* background-image:  repeating-linear-gradient(to right, #8E9AAF, #8E9AAF 1px, #f5f6f8 1px, #f5f6f8); */
-}
-
-footer {
-  text-align: center;
-  background-color: #52ab98;
-}
-
-.card {
-  background-color: #f2f2f2;
-  /* border: 3px solid #CBC0D3; */
-}
-
-.card:hover {
-    background-color: #c8d8e4;
-}
-
 .link {
-  color: black;
   padding: 0.5rem 1rem;
   margin: 2px;
   transition: all 0.3s;
   position: relative;
+  letter-spacing: 1px;
 }
 
 .link:hover {
@@ -86,7 +89,101 @@ footer {
   text-decoration: none;
   border-radius: 5px;
   /* background-color: #c8d8e4; */
+}
+
+/* ABOUT ME */
+#about-me {
+  margin: 2% auto;
+}
+
+.about-me {
+  margin: 1rem 20%;
+  padding: 0.5rem 1rem;
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.about-me-hello {
+  margin: 1rem;
+}
+
+.handwave {
+  width: 5%;
+}
+
+.languages-container {
+  width: 55%;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 1% 0;
+}
+
+.table-languages {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.table-languages img {
+  padding: 0 5px;
+}
+
+/* PROJECTS PORTFOLIO */
+#projects {
+  background-color: #824C71;
+  margin: 5% auto 1%;
+  transform: skewY(-4deg);
+}
+
+#project-container {
+  transform: skewY(4deg);
+  margin: 2% auto 2%;
+  padding: 0% 0 0.5%;
+}
+
+#project-container .container {
+  margin: 1% auto;
+}
+
+.project-heading {
+  padding: 1%;
+  letter-spacing: 8px;
+  color: #cfc8bb;
+  font-size: 3.5rem;
+  font-weight: bold;
+  /* font-family: monospace; */
+}
+
+.project-category-heading {
+  background-color: #CEBACF;
   letter-spacing: 2px;
+  color: #fffbf0;
+  font-size: 2.2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1% auto 0;
+}
+
+.card {
+  background-color: #f2f2f2;
+  margin: 2% auto ;
+  /* border: 3px solid #CBC0D3; */
+}
+
+.card:hover {
+    background-color: #c8d8e4;
+}
+
+.project-label {
+  position: relative;
+  margin-right: 0;
+  text-align: right;
+}
+
+.portfolio-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 .row a {
@@ -98,44 +195,39 @@ footer {
   text-decoration: none;
 }
 
-.portfolio-img {
-  height: 200px;
-  object-fit: cover;
-  object-position: 50% 0;
-}
-
-.project-label {
-  position: relative;
-  margin-right: 0;
-  text-align: right;
-}
-
-.web-dev-heading {
-  background-color: #c8d8e4;
-  letter-spacing: 5px;
-}
-
-/* Nav Bar Button Transition */
-.btn-one::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
+/* MODAL POP UPS */
+.modal-img {
   width: 100%;
-  height: 100%;
-  opacity: 0;
+  border: 2px solid #343a40;
+  margin: 2px 0;
+} 
+
+/* CONTACT ME */
+.contact-me  {
+  background-color: #fffbf0;
+  padding: 1% 0 2%;
+  
+}
+
+.contact-link {
+  padding: 0.5rem 1rem;
+  margin: 2px;
   transition: all 0.3s;
-  border-left: 1px solid rgba(0,0,0,0.5);
-  border-right: 1px solid rgba(0,0,0,0.5);
-  transform: scale(0.1, 1);
+  position: relative;
+  letter-spacing: 1px;
+  color: black;
 }
 
-.btn-one:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
+.contact-link:hover {
+text-decoration: none;
+color: black;
 }
 
-.btn-one:hover::after {
-  opacity: 0;
-  transform: scale(0.1, 1);
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #fffbf0;
+  padding: 0.6% 0 0.5%;
+  background-color: rgba(43,103,119);
+  color: #fffbf0;
 }
