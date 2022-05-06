@@ -24,6 +24,7 @@ nav {
 
 nav a {
   color: #cfc8bb;
+  color: hsla(0,0%,100%,0.7)
 }
 
 .scrolled {
@@ -162,22 +163,25 @@ nav a {
   font-size: 2.2rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 1% auto 0;
+  /* color: hsla(0,0%,100%,0.7); */
 }
 
 .card {
-  background-color: #f2f2f2;
+  background-color: white;
   margin: 2% auto ;
-  /* border: 3px solid #CBC0D3; */
+  border: 2px solid #CBC0D3;
 }
 
 .card:hover {
-    background-color: #c8d8e4;
+    background-color: hsla(0,0%,100%,0.7);
+}
+
+.card-body {
+  padding-bottom: 0.75rem;
 }
 
 .project-label {
   position: relative;
-  margin-right: 0;
-  text-align: right;
 }
 
 .portfolio-img {
