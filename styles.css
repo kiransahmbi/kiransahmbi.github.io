@@ -267,7 +267,7 @@ footer {
 #projects .container {
   opacity: 0;
   transform: translateX(-400px);
-  transition: 600ms;
+  transition: 700ms;
 }
 
 #projects .container.showProjects {
