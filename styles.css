@@ -20,6 +20,7 @@ nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    transition: 300ms;
 }
 
 nav a {
@@ -29,10 +30,12 @@ nav a {
 
 .scrolled {
   background-color: #fffbf0;
+  transition: 800ms;
 }
 
 .scrolled-text {
   color: black;
+  transition: 800ms;
 }
 
 /* HEADER */
@@ -40,6 +43,7 @@ nav a {
   background: rgb(0,0,0);
   background: linear-gradient(110deg, rgba(43,103,119,1) 70%, #071214 100%);
   padding: 15%;
+  
 }
 
 .header-picture-container {
@@ -116,7 +120,8 @@ nav a {
 .languages-container {
   width: 55%;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid rgba(43,103,119);
+  border-radius: 10px;
   padding: 1% 0;
 }
 
@@ -234,4 +239,38 @@ footer {
   padding: 0.6% 0 0.5%;
   background-color: rgba(43,103,119);
   color: #fffbf0;
+}
+
+/* Scroll Animation */
+.to-observe-about-me {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 600ms;
+}
+
+.to-observe-about-me.showAboutMe {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.header .row {
+  opacity: 1;
+  transform: translateY(-400px);
+  transition: 700ms;
+}
+
+.header .row.showHeader {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#projects .container {
+  opacity: 0;
+  transform: translateX(-400px);
+  transition: 600ms;
+}
+
+#projects .container.showProjects {
+  transform: translateX(0);
+  opacity: 1;
 }
