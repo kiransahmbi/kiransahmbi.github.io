@@ -111,17 +111,17 @@ nav a {
 .about-me {
   margin: 1rem auto;
   padding: 0.5rem 1.5rem;
-  letter-spacing: normal;
   line-height: 1.5;
   text-align: left;
 }
 
 .about-me-hello {
   margin: 1rem;
+  letter-spacing: 6px;
 }
 
 .handwave {
-  width: 8%;
+  width: 8vh;
 }
 
 .languages-container {
@@ -168,7 +168,7 @@ nav a {
 
 .project-heading {
   padding: 1%;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   color: #cfc8bb;
   font-size: 3.5rem;
   font-weight: bold;
@@ -222,9 +222,9 @@ nav a {
 
 /* MODAL POP UPS */
 .modal-img {
-  width: 100%;
-  border: 2px solid #343a40;
+  border: 2px solid #c7cacc;
   margin: 2px 0;
+  width: 100%;
 } 
 
 /* CONTACT ME */
