@@ -38,7 +38,7 @@ const observerHeader = new IntersectionObserver(
             entry.target.classList.toggle("showHeader", entry.isIntersecting)
             if (entry.isIntersecting) observerHeader.unobserve(entry.target)
         })
-    });
+    }, {rootMargin: '200px', threshold: 0});
 
 toObserveHeader.forEach(item => {
     observerHeader.observe(item)

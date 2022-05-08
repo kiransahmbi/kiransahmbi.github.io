@@ -57,20 +57,26 @@ nav a {
 }
 
 .header-description-container {
-  padding: 5.5% 5% 0 0;
+  padding: 5.5% 15% 0 0;
   text-align: left;
 }
 
 .header-name {
-  letter-spacing: 8px;
-  margin-bottom: 1.5rem;
+  letter-spacing: 6px;
+  word-spacing: 6px;
+  margin-bottom: 1rem;
 }
 
 .header-tagline {
-  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: hsla(0,0%,100%,0.5);
+}
+
+.header-tagline span {
   margin: 0 auto;
   letter-spacing: 2px;
-  padding: 0.4rem 1rem 0.4rem 1rem;
 }
 
 .header-buttons {
@@ -99,10 +105,11 @@ nav a {
 /* ABOUT ME */
 #about-me {
   margin: 2% auto;
+  width: 60%;
 }
 
 .about-me {
-  margin: 1rem 20%;
+  margin: 1rem auto;
   padding: 0.5rem 1rem;
   letter-spacing: normal;
   line-height: 1.5;
@@ -114,21 +121,28 @@ nav a {
 }
 
 .handwave {
-  width: 5%;
+  width: 8%;
 }
 
 .languages-container {
-  width: 55%;
+  width: 80%;
   margin: 0 auto;
-  border: 2px solid rgba(43,103,119);
+  background-color: rgba(43, 103, 119, 0.85);
   border-radius: 10px;
-  padding: 1% 0;
+  padding: 2% 0 0.5%;
+  color: hsla(0,0%,100%,0.9);
 }
 
 .table-languages {
   margin: 0 auto;
-  width: 80%;
+  padding: 0;
   font-size: 1rem;
+  color: hsla(0,0%,100%,0.8);
+  background-color: rgba(43, 103, 119, 0.85);
+}
+
+.table-languages td {
+  border: none;
 }
 
 .table-languages img {
@@ -169,12 +183,14 @@ nav a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 1% auto 0;
   /* color: hsla(0,0%,100%,0.7); */
+  border-radius: 10px;
 }
 
 .card {
   background-color: white;
   margin: 2% auto ;
-  border: 2px solid #CBC0D3;
+  /* border: 2px solid #CBC0D3; */
+  border-radius: 10px;
 }
 
 .card:hover {
@@ -232,6 +248,16 @@ text-decoration: none;
 color: black;
 }
 
+.take-a-look-link {
+  color: #ad67b1;
+  text-decoration: none;
+}
+
+.take-a-look-link:hover {
+  color: #824C71;
+  text-decoration: none;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -255,7 +281,7 @@ footer {
 
 .header .row {
   opacity: 1;
-  transform: translateY(-400px);
+  transform: translateY(-300px);
   transition: 700ms;
 }
 
@@ -267,7 +293,7 @@ footer {
 #projects .container {
   opacity: 0;
   transform: translateX(-400px);
-  transition: 700ms;
+  transition: 800ms;
 }
 
 #projects .container.showProjects {
