@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ticket Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+
+  </head>
+
+  <body>
+
+<!-- Nav Bar -->
+    <nav class="site-header navbar navbar-expand-lg fixed-top py-2 shadow-sm">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="link hover-effect d-none d-md-inline-block" href="index.html#header">Homepage</a>
+        <a class="link hover-effect d-none d-md-inline-block" href="index.html#about-me">About Me</a>
+        <a class="link hover-effect d-none d-md-inline-block" href="index.html#projects">Projects</a>
+        <a class="link hover-effect d-none d-md-inline-block" href="./images/resume.pdf" target="_blank">Resume</a>
+      </div>
+    </nav>
+
+<!-- Header -->
+<header class="header-projects shadow-sm" id="">
+  <div id="project-introduction" class="container">
+    <div class="text-center">
+        
+      <h1 class="display-4 font-weight-normal project-name">Ticket Management Web App</h1>
+      <figure class="">
+          <img class="project-header-img shadow-sm" src="images/TicketManagement/Homepage.png" data-toggle="modal" data-target="#modal-project-img" data-title="Ticket Management Web App" data-imgsource="images/TicketManagement/Homepage.png"/>
+          <figcaption class="figure-caption"><span>Express.js | Oracle | Node.js</span></figcaption>
+      </figure>
+      
+      <p class="lead font-weight-normal project-tagline mx-5 mt-5">
+        A Web Application that allows users to buy tickets to various events (Concerts, Sports, etc).<br>
+        The project was completed by designing and implementing an Oracle database.<br>
+        The database utilizes concepts such as procedures, functions, triggers, and indexes to maintain database integrity upon order creation/deletion.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- Project -->
+<div class="container">
+        
+  <h1 class="display-4 font-weight-normal mt-5 mb-3 spaced-letters">Requirements</h1>
+  <div class="lead font-weight-normal requirements-tagline mx-5 text-left">
+    <ul>
+      <li>
+        User can select a particular event, and show they want to attend. They can select a ticket from a variety of seats and add it to their cart.
+      </li>
+      <li>
+        The User's cart contains all selected tickets and total cost. Any undesired tickets can be deleted.
+      </li>
+      <li>
+        Upon checkout, user will receive an order confirmation. User can view all purchase orders through their Account Page.
+      </li>
+    </ul>
+    
+    <h3 class="display-6 font-weight-normal mt-4 mb-0 text-center">Entity Relationship Diagram</h3>
+    <div class="row">
+        <div class="col-md-12" data-toggle="modal" data-target="#modal-project-img" data-title="Entity Relationship Diagram" data-imgsource="images/TicketManagement/ERD.png">
+            <div class="card mb-1 shadow-sm">
+            <img class="project-img" src="images/TicketManagement/ERD.png" />
+            </div>
+        </div>
+    </div>
+
+    <h3 class="display-6 font-weight-normal mt-5 mb-3 text-center">Triggers and Procedures/Functions</h3>
+    <ol>
+      <li>'Create Seats' Procedure & Trigger</li>
+      <ul>
+        <li>
+          Upon venue creation, the procedure will create all the seat records for the venue.
+        </li>
+      </ul>
+      <br>
+      <li>'Create Tickets' Procedure & Trigger</li>
+      <ul>
+        <li>
+          Upon event-show creation, the procedure will create tickets for all the seats in the venue.
+        </li>
+        <li>
+          The procedure uses the aid of 'Calculate Ticket Price Function'. <br>This function calculates ticket prices based on the event type, section number, and aisle number.
+        </li>
+      </ul>
+      <br>
+      <li>'Create Order' Procedure</li>
+      <ul>
+        <li>
+          This procedure is called upon order completion. Corresponding records are created in the ORDERS and ORDER-ITEMS table. It utilizes 'Sales Tax Function' to calculate the regional sales tax.
+        </li>
+      </ul>
+      <br>
+      <li>'Delete Order' Procedure</li>
+      <ul>
+        <li>
+          This procedure is called upon order deletion. Associated records are deleted from the ORDERS and ORDER-ITEMS table.
+        </li>
+      </ul>
+    </ol>
+
+  </div>
+</div>
+
+<!-- Programming -->
+    <div id="functionality" class="py-3">
+      <div id="project-container">
+        <h1 class="font-weight-normal project-heading">Functionality</h1>
+        <div class="container">
+
+          
+
+            <h1 class="pt-4 pb-3 mt-3 mb-2 text-center project-category-heading">Customer Features</h1>
+            <div class="row">
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Events Page" data-imgsource="images/TicketManagement/Events Page.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Events Page</div>
+                    <img class="project-img" src="images/TicketManagement/Events Page.png" />
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Event Showings" data-imgsource="images/TicketManagement/Showings.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Event Showings</div>
+                    <img class="project-img" src="images/TicketManagement/Showings.png" />
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Show Details & Seating" data-imgsource="images/TicketManagement/Show Details.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Show Details & Seating</div>
+                    <img class="project-img" src="images/TicketManagement/Show Details.png" />
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 class="pt-4 pb-3 mt-3 mb-2 text-center project-category-heading">Checkout Features</h1>
+            <div class="row">
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Cart" data-imgsource="images/TicketManagement/Cart.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Cart</div>
+                    <img class="project-img" src="images/TicketManagement/Cart.png" />
+                    </div>
+                </div>
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="My Orders" data-imgsource="images/TicketManagement/My Account Orders.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">My Orders</div>
+                    <img class="project-img" src="images/TicketManagement/My Account Orders.png" />
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="contact-me">
+    <h1>Contact Me!</h1><br>
+      <a class="contact-link" href="mailto:kiransahmbi@yahoo.ca">kiransahmbi@yahoo.ca</a>
+      |
+      <a class="contact-link" target=”_blank” href="https://github.com/kiransahmbi">Github</a>
+  </div>
+
+<!-- Modal -->
+ <div class="modal fade" id="modal-project-img" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-left">
+        <img class="modal-img" src="" />
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- Footer -->
+    <footer>
+      &copy; 2023
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="projects.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.header-projects {
+    background: rgb(0,0,0);
+    background: linear-gradient(110deg, rgba(43,103,119,1) 70%, #071214 100%);
+    padding: 6%;
+  }
+
+.project-header-img {
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.125);
+    height: 25rem;
+    object-fit: cover;
+    object-position: 50% 0;
+    margin: 3% 0% 1%;
+}
+
+.figure-caption {
+    color: rgb(218, 217, 217);
+}
+
+.project-img {
+    height: 20rem;
+    object-fit: scale-down;
+    object-position: 50% 0;
+}
+
+.project-tagline {
+    /* margin: 2% 5%; */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: hsla(0,0%,100%,0.5);
+}
+
+.project-name {
+    /* margin-top: 8%; */
+    color: rgb(218, 217, 217);
+}
+
+.requirements-tagline {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+#functionality {
+    background-color: #824C71;
+    margin: 5% auto 1%;
+    transform: skewY(-4deg);
+}
+
+.spaced-letters {
+    letter-spacing: 6px;
+}
+

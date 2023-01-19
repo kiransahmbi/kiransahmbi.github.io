@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sell Used Products Web App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+
+  </head>
+
+  <body>
+
+<!-- Nav Bar -->
+    <nav class="site-header navbar navbar-expand-lg fixed-top py-2 shadow-sm">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="link hover-effect d-none d-md-inline-block" href="index.html#header">Homepage</a>
+        <a class="link hover-effect d-none d-md-inline-block" href="index.html#about-me">About Me</a>
+        <a class="link hover-effect d-none d-md-inline-block" href="index.html#projects">Projects</a>
+        <a class="link hover-effect d-none d-md-inline-block" href="./images/resume.pdf" target="_blank">Resume</a>
+      </div>
+    </nav>
+
+<!-- Header -->
+  <header class="header-projects shadow-sm" id="">
+    <div id="project-introduction" class="container">
+      <div class="text-center">
+          
+          <h1 class="display-4 font-weight-normal project-name spaced-letters">Sell Used Products Web App</h1>
+          <figure class="">
+              <img class="project-header-img shadow-sm" src="images/UsedGoodsWebsite/Homepage.png"  data-toggle="modal" data-target="#modal-project-img" data-title="Sell Used Products Web App" data-imgsource="images/UsedGoodsWebsite/Homepage.png"/>
+              <figcaption class="figure-caption"><span>Angular.js | Express.js | MongoDB | Node.js</span></figcaption>
+          </figure>
+          
+          <p class="lead font-weight-normal project-tagline mx-5 mt-5">
+              A Web Application that allows authenticated users to post listings of products they wish to sell.<br>
+              All listings and details can be viewed publically, where anonymous users may post questions on a particular listing.
+          </p>
+      </div>
+    </div>
+  </header>
+
+<!-- Project -->
+    <div class="text-center container">
+        
+        <h1 class="display-4 font-weight-normal my-5 spaced-letters">Requirements</h1>
+        <div class="lead font-weight-normal requirements-tagline mx-5 text-left">
+          <ol>
+            <li>User Management and Site Security</li>
+            <ul>
+              <li>
+                User Registration allows user to enter profile information (username, password, email address, etc.) to be stored in MongoDB database.
+              </li>
+              <li>
+                User will be able to Login, Logout (JWT Authentication), and view/edit their posted listings.
+              </li>
+              <li>
+                Non-registered users cannot create, edit, delete listings or enter secure areas of the site.
+              </li>
+            </ul>
+            <br>
+            <li>Listings</li>
+            <ul>
+              <li>
+                After a user is registered and logged in, they can post public advertisement (CRUD).
+              </li>
+              <li>
+                User can specify Listing Start Date and Lifetime of the advertisement (i.e. when listing becomes active/enabled, when it expires).
+              </li>
+              <li>
+                A registered user will be able to edit, delete any advertisement that they owns (CRUD).
+              </li>
+            </ul>
+            <br>
+            <li>Questions Feature</li>
+            <ul>
+              <li>
+                Anonymous users can post public questions on any active listing.
+              </li>
+              <li>
+                Only the user that published the ad can post an answer for a question.
+              </li>
+            </ul>
+          </ol>
+        </div>
+    </div>
+
+<!-- Programming -->
+    <div id="functionality" class="py-3">
+      <div id="project-container">
+        <h1 class="font-weight-normal project-heading">Functionality</h1>
+        <div class="container">
+
+            <h1 class="pt-4 pb-3 mt-3 mb-2 text-center project-category-heading">Product Listings (As Unauthenticated User)</h1>
+            <div class="row">
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Product Listings" data-imgsource="images/UsedGoodsWebsite/Product Listings.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Public Product Listings</div>
+                    <img class="project-img" src="images/UsedGoodsWebsite/Product Listings.png" />
+                    <!-- <div class="card-body">
+                        <p class="card-text">A desktop calculator application with memory functions.</p>
+                    </div> -->
+                    </div>
+                </div>
+                
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Product Details" data-imgsource="images/UsedGoodsWebsite/Product Details.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Product Details Page</div>
+                    <img class="project-img" src="images/UsedGoodsWebsite/Product Details.png" />
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Ask an Anonymous Question" data-imgsource="images/UsedGoodsWebsite/Ask a Question.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Ask an Anonymous Question</div>
+                    <img class="project-img" src="images/UsedGoodsWebsite/Ask a Question.png" />
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 class="pt-4 pb-3 mt-3 mb-2 text-center project-category-heading">Authenticated User Features</h1>
+            <div class="row">
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Sign In" data-imgsource="images/UsedGoodsWebsite/Sign in.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Sign In</div>
+                    <img class="project-img" src="images/UsedGoodsWebsite/Sign in.png" />
+                    </div>
+                </div>
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Product Page as Authenticated User" data-imgsource="images/UsedGoodsWebsite/Product Page as Signed In User.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Product Page as Authenticated User</div>
+                    <img class="project-img" src="images/UsedGoodsWebsite/Product Page as Signed In User.png" />
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Update Product Listing" data-imgsource="images/UsedGoodsWebsite/Update Item.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Update Product Listing</div>
+                    <img class="project-img" src="images/UsedGoodsWebsite/Update Item.png" />
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-toggle="modal" data-target="#modal-project-img" data-title="Answer Question on Listing" data-imgsource="images/UsedGoodsWebsite/Update Answer.png">
+                    <div class="card mb-1 shadow-sm">
+                    <div class="card-header">Answer Question on Listing</div>
+                    <img class="project-img" src="images/UsedGoodsWebsite/Update Answer.png" />
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="contact-me">
+    <h1>Contact Me!</h1><br>
+      <a class="contact-link" href="mailto:kiransahmbi@yahoo.ca">kiransahmbi@yahoo.ca</a>
+      |
+      <a class="contact-link" target=”_blank” href="https://github.com/kiransahmbi">Github</a>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="modal-project-img" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="text-left">
+          <img class="modal-img" src="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+    <footer>
+      &copy; 2023
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="projects.js" type="text/javascript"></script>
+  </body>
+</html>
