@@ -1,7 +1,7 @@
 .header-projects {
     background: rgb(0,0,0);
     background: linear-gradient(110deg, rgba(43,103,119,1) 70%, #071214 100%);
-    padding: 6%;
+    padding:  5% 0 3%;
   }
 
 .project-header-img {
@@ -11,7 +11,7 @@
     height: 25rem;
     object-fit: cover;
     object-position: 50% 0;
-    margin: 3% 0% 1%;
+    margin: 2% 0% 1%;
 }
 
 .figure-caption {
@@ -34,6 +34,10 @@
 .project-name {
     /* margin-top: 8%; */
     color: rgb(218, 217, 217);
+}
+
+.project-btn {
+    background-color: hsla(0,0%,100%,0.7);
 }
 
 .requirements-tagline {
